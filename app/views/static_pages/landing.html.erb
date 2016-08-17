@@ -1,0 +1,8 @@
+<h1>Welcome to the Ruby Habits Library</h1>
+
+<% if current_user %>
+  <%= "Welcome #{current_user.name}!" %>
+<% else %>
+  <%= link_to "Sign in with GitHub", "/auth/github" %>
+<% end %>
+
